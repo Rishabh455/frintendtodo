@@ -17,7 +17,7 @@ const EditTable = () => {
   }, []);
 
   const loadUserDetails = async () => {
-    let response = await fetch(`http://localhost:5000/api/userEdit/${id}`, {
+    let response = await fetch(`https://backendtoto.vercel.app/api/userEdit/${id}`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -30,7 +30,7 @@ const EditTable = () => {
 
   const edituserdetails = async () => {
     navigate("/");
-    let response = await fetch(`http://localhost:5000/api/userEdit/${id}`, {
+    let response = await fetch(`https://backendtoto.vercel.app/api/userEdit/${id}`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
