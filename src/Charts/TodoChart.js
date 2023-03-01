@@ -8,7 +8,7 @@ const TodoChart = () => {
   const [lists, setlists] = useState([]);
   const loadData = async () => {
     let response = await fetch(
-      "http://localhost:5000/api/todos/count-by-date",
+      "https://backendtoto.vercel.app/api/todos/count-by-date",
       {
         method: "GET",
         headers: {
@@ -25,27 +25,7 @@ const TodoChart = () => {
     loadData();
   }, []);
 
-  // useEffect(() => {
-  //   const fetchData = async () => {
-  //     const response = await fetch(
-  //       "http://localhost:5000/api/todos/count-by-date"
-  //     );
-  //     const todos = await response.json();
-
-  //     console.log(todos);
-  //     const chartData = {
-  //       labels: todos.map((data) => data._id),
-  //       datasets: [
-  //         {
-  //           label: "data added at diif. dates",
-  //           data: todos.map((data) => data.count),
-  //         },
-  //       ],
-  //     };
-  //     setData(chartData);
-  //   };
-  //   fetchData();
-  // }, []);
+ 
 
   return (
     <div>
