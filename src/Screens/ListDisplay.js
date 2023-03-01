@@ -19,7 +19,7 @@ const ListDisplay = () => {
   var index = 0;
   const navigate = useNavigate();
   const deleteClicked = async (ide) => {
-    let response = await fetch(`http://localhost:5000/api/deleteUser/${ide}`, {
+    let response = await fetch(`https://backendtoto.vercel.app/api/deleteUser/${ide}`, {
       method: "DELETE",
       headers: {
         "Content-Type": "application/json",
