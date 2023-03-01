@@ -25,7 +25,7 @@ const ListDisplay = () => {
         "Content-Type": "application/json",
       },
     });
-    let respons = await fetch("http://localhost:5000/api/userData", {
+    let respons = await fetch("https://backendtoto.vercel.app/api/userData", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -38,7 +38,7 @@ const ListDisplay = () => {
   };
 
   const loadData = async () => {
-    let response = await fetch("http://localhost:5000/api/userData", {
+    let response = await fetch("https://backendtoto.vercel.app/api/userData", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
